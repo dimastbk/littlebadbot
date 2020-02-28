@@ -1,0 +1,39 @@
+[tool.black]
+target-version = ["py38"]
+exclude = "migrations"
+skip-string-normalization = true
+line-length = 79
+
+[tool.isort]
+line_length = 79
+known_tg = "telegram"
+sections = "FUTURE,STDLIB,TG,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+multi_line_output=3
+skip = "migrations"
+include_trailing_comma = true
+
+[tool.poetry]
+name = "littlebadbot"
+version = "0.1.0"
+description = ""
+authors = ["Дмитрий <dimastbk@yandex.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-telegram-bot = "^12.4.2"
+python-dotenv = "^0.11.0"
+
+[tool.poetry.dev-dependencies]
+isort = "^4.3.21"
+flake8 = "^3.7.9"
+black = "^19.10b0"
+flake8-quotes = "^2.1.1"
+flake8-debugger = "^3.2.1"
+flake8-comprehensions = "^3.2.2"
+flake8-builtins = "^1.4.2"
+flake8-bugbear = "^20.1.4"
+flake8-bandit = "^2.1.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
