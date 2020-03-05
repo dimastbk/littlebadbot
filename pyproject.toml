@@ -22,6 +22,7 @@ authors = ["Дмитрий <dimastbk@yandex.ru>"]
 python = "^3.7"
 python-telegram-bot = "^12.4.2"
 python-dotenv = "^0.11.0"
+redis = "^3.4.1"
 
 [tool.poetry.dev-dependencies]
 isort = "^4.3.21"
